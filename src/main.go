@@ -1,8 +1,10 @@
 
 package main
 
-import "fmt"
+import ("fmt"
+		"github.com/example/module/src/greetings"
+	)
 
 func main() {
-	fmt.Println("Hello, world!")
+	fmt.Printf("%s, world!/n", greetings.Greeting())
 }
