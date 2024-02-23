@@ -8,6 +8,8 @@ go_library(
 go_test(
     name= "greetings_test",
     srcs= ["greetings_test.go"],
-    deps= [":greetings"],
+    deps= [":greetings",
+        "//third_party/go:testify"
+    ],
     external = True,
 )
